@@ -542,6 +542,7 @@ ul.publications .authors {
 
 ul.publications .journal-info {
   color: #828282;
+  /* font-weight: bold; */
   font-size: 0.9rem;
 }
 

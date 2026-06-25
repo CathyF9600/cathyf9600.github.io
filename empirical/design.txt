@@ -1,5 +1,6 @@
-Demystifying Action Space Design for Robotic Manipulation Policies
-Yuchun Feng * 1 Jinliang Zheng * 1 2 Zhihao Wang 1 3 Dongxiu Liu 1 Jianxiong Li 1 Jiangmiao Pang 2 Tai Wang 2 Xianyuan Zhan 1
+Demystifying Action Space Design for Robotic Manipulation Policies % I want this title section to be centered
+Yuchun Feng * 1 Jinliang Zheng * 1 2 Zhihao Wang 1 3 Dongxiu Liu 1 Jianxiong Li 1 %newline
+Jiangmiao Pang 2 Tai Wang 2 Xianyuan Zhan 1
 *Equal contribution 1
 Institute for AI Industry Research (AIR),
 Tsinghua University 2
@@ -9,9 +10,10 @@ Correspondence to: Tai Wang <taiwang.me@gmail.com>, Xianyuan
 Zhan <zhanxianyuan@air.tsinghua.edu.cn>.
 
 
-[Paper] [Code] [HuggingFace]
+[Paper: https://arxiv.org/pdf/2602.23408] [Code: https://github.com/CathyF9600/DemystifyActionSpace] [HuggingFace]
 
-Section: Action Space Design Has Not Reached Consensus
+% make all sections' the overall width to be wider 
+Section: Action Space Design Has Not Reached Consensus 
 [assets/consensus.png]
 Bullet points:
 Action space specification is a critical design choice in imitation-based robotic manipulation policy learning. 
@@ -20,21 +22,22 @@ Action spaces are often selected using ad-hoc heuristics or legacy conventions, 
 We conduct a large-scale, systematic empirical study to investigate the role of action space design. 
 Our results reveal that action space choices have significant and nuanced effects on policy learning performance.
 We decompose the action design space along two key dimensions:
-[assets/preliminary.png]
+[assets/preliminary.png] % this pic bigger
 
 Section: Experiment Setup
 [assets/ex.png]
 
 Section: Preliminary: Implementation Nuances are Decisive    
-[assets/delta_horizon.png]
+[assets/delta_horizon.png] % this pic bigger
+% text larger
 (1) Chunk-wise delta is fundamentally superior to step-wise delta.
 (2) Optimal horizons are critical and abstraction-dependent: delta requires shorter windows while absolute thrives with longer horizons.
 
 
 Section: Overall Takeaways
 [assets/main_table.png] (takes up a whole line)
-[assets/radar.png] left, [assets/advanced.png] right
-
+[assets/radar.png] left %this pic bigger, [assets/advanced.png] right
+% text larger
 (1) The superiority of delta actions remains consistent across diverse learning regimes. 
 (2) Joint-space actions benefit exceptionally from stronger modeling capacity and extensive training.
 (3) Task-space representations demonstrate a pronounced advantage in generalized settings such as cross embodiment and transfer learning regimes.
@@ -43,7 +46,7 @@ Section: Overall Takeaways
 Section: Scaling Experiments
 (1) Delta actions serve as a superior temporal abstraction for modern policy backbones. 
 (2) Joint-space control generally provides a more robust spatial representation, particularly when paired with strong generative modeling (e.g., diffusion).
-[assets/scaling.png]
+[assets/scaling.png] % pic bigger
 Sample rollout videos:
 [1] [2] [3] [4] (these four videos are missing, just use place holders for now)
 1: assets/real/abs_ee.mp4
@@ -52,17 +55,22 @@ Sample rollout videos:
 4: assets/real/rel_joint.mp4
 
 Section: Spatial Variation in Performance
-[assets/spatial.png]
+[assets/spatial.png] % slightly smaller
 We partition the workspace into a `6x6` grid and evaluate each policy across the resulting spatial bins. For each action representation, we first compute the success rate within each grid cell, and then summarize the degree of spatial heterogeneity by taking the standard deviation of these per-cell success rates across all locations. A lower standard deviation indicates that performance is more uniform across the workspace, while a higher value indicates stronger sensitivity to spatial location. Using this metric, we obtain:
 
 Section: Scaling Experiments on RoboTwin
-[assets/robotwin_ep.png] left, [assets/robotwin_data.png] right
+[assets/robotwin_ep.png] left, [assets/robotwin_data.png] right % both pics bigger
 Sample rollout videos:
 [1] [2] [3] [4]
-1: assets/robotwin/abs_ee.mp4
-2: assets/robotwin/abs_joint.mp4
-3: assets/robotwin/rel_ee.mp4
-4: assets/robotwin/rel_joint.mp4
+1: assets/robotwin/dump_bin_bigbin/abs_ee.mp4
+2: assets/robotwin/dump_bin_bigbin/abs_joint.mp4
+3: assets/robotwin/dump_bin_bigbin/rel_ee.mp4
+4: assets/robotwin/dump_bin_bigbin/rel_joint.mp4
+[5] [6] [7] [8]
+5: assets/robotwin/place_burger_fries/abs_ee.mp4
+6: assets/robotwin/place_burger_fries/abs_joint.mp4
+7: assets/robotwin/place_burger_fries/rel_ee.mp4
+8: assets/robotwin/place_burger_fries/rel_joint.mp4
 
 Section: Cloth Folding Task ([] will display as embedded videos)
 [1] [2] [3] [4]
@@ -86,6 +94,6 @@ Abs-EE(hard mode) Abs-Joint(hard mode) Delta-EE(hard mode) Delta-Joint(hard mode
 12: https://www.youtube.com/watch?v=Oh9KMxILBOI
 
 
-[assets/xvla_result.png]
+[assets/xvla_result.png] % slightly smaller
 we also introduce advanced experiments on cloth folding, which serves as a representative task for deformable object manipulation.We implemented a VLA model based on a VLM+DiT backbone. We systematically designed two evaluation protocols to stress-test the model’s adaptability
 

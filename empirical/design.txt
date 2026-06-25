@@ -10,7 +10,7 @@ Correspondence to: Tai Wang <taiwang.me@gmail.com>, Xianyuan
 Zhan <zhanxianyuan@air.tsinghua.edu.cn>.
 
 
-[Paper: https://arxiv.org/pdf/2602.23408] [Code: https://github.com/CathyF9600/DemystifyActionSpace] [HuggingFace]
+[Paper: https://arxiv.org/pdf/2602.23408] [Code: https://github.com/CathyF9600/DemystifyActionSpace] [HuggingFace:https://huggingface.co/datasets/cfeng9600/DemystifyActionSpace]
 
 Section: Action Space Design Has Not Reached Consensus 
 [assets/consensus.png]
@@ -53,7 +53,7 @@ Sample rollout videos:
 
 Section: Spatial Variation in Performance
 [assets/spatial.png]
-We partition the workspace into a `6x6` grid and evaluate each policy across the resulting spatial bins. For each action representation, we first compute the success rate within each grid cell, and then summarize the degree of spatial heterogeneity by taking the standard deviation of these per-cell success rates across all locations. A lower standard deviation indicates that performance is more uniform across the workspace, while a higher value indicates stronger sensitivity to spatial location. Using this metric, we obtain:
+We partition the workspace into a `6x6` grid and evaluate each policy across the resulting spatial bins. For each action representation, we first compute the success rate within each grid cell, and then summarize the degree of spatial heterogeneity by taking the standard deviation of these per-cell success rates across all locations. A lower standard deviation indicates that performance is more uniform across the workspace, while a higher value indicates stronger sensitivity to spatial location.
 
 Section: Scaling Experiments on RoboTwin
 [assets/robotwin_ep.png] left, [assets/robotwin_data.png] right

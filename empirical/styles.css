@@ -131,7 +131,7 @@ a {
 .eyebrow {
   margin: 0 0 10px;
   color: var(--accent-2);
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 800;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -150,14 +150,14 @@ h1 {
   margin-right: auto;
   margin-bottom: 22px;
   margin-left: auto;
-  font-size: clamp(2.8rem, 7vw, 6.4rem);
-  line-height: 0.95;
+  font-size: clamp(2.8rem, 7vw, 4.5rem);
+  line-height: 1.2;
   letter-spacing: 0;
 }
 
 h2 {
   margin-bottom: 0;
-  font-size: clamp(1.75rem, 3vw, 3rem);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
   line-height: 1.12;
   letter-spacing: 0;
 }
@@ -256,16 +256,89 @@ h3 {
   margin-left: auto;
 }
 
+.figure-consensus {
+  width: 70%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-consensus img {
+  width: 100%;
+  height: auto;
+}
+
+.figure-exp {
+  width: 75%;
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-exp img {
+  width: 100%;
+  height: auto;
+}
+
+.figure.figure-wide.figure-main-table {
+  width: 75%;
+  max-width: 1100px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-main-table img {
+  width: 100%;
+  height: auto;
+}
+
+.figure.figure-advanced {
+  width: 75%;
+  min-width: 0;
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.figure-advanced img {
+  width: 100%;
+  height: auto;
+}
+
+.figure.figure-large.figure-scaling {
+  width: 110%;
+  max-width: none;
+  min-width: 0;
+  margin-left: -12px;
+  margin-right: auto;
+}
+
+.figure-scaling img {
+  width: 100%;
+  height: auto;
+}
+
 .figure-large {
   max-width: 1720px;
 }
 
 .figure-xl {
   max-width: 1840px;
+  min-width: 800px;
+  margin-left: 12px;
 }
 
-.figure-slim {
-  max-width: 1180px;
+.figure.figure-wide.figure-slim {
+  width: 70%;
+  max-width: 900px;
+  min-width: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.figure-slim img {
+  width: 100%;
+  height: auto;
 }
 
 .split {
@@ -315,6 +388,10 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: clamp(18px, 3vw, 30px);
   margin-top: 28px;
+}
+
+.gallery-two.gallery-robotwin {
+  gap: 2px;
 }
 
 .takeaway-grid {

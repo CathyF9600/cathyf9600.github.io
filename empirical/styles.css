@@ -93,17 +93,8 @@ a {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-      90deg,
-      rgba(247, 248, 244, 0.98) 0%,
-      rgba(247, 248, 244, 0.84) 48%,
-      rgba(247, 248, 244, 0.24) 100%
-    ),
-    linear-gradient(
-      0deg,
-      rgba(247, 248, 244, 0.96) 0%,
-      rgba(247, 248, 244, 0) 34%
-    );
+  background: linear-gradient(90deg, rgba(247, 248, 244, 0.98) 0%, rgba(247, 248, 244, 0.84) 48%, rgba(247, 248, 244, 0.24) 100%),
+    linear-gradient(0deg, rgba(247, 248, 244, 0.96) 0%, rgba(247, 248, 244, 0) 34%);
 }
 
 .hero-media {
@@ -416,12 +407,7 @@ code {
   }
 
   .hero::after {
-    background: linear-gradient(
-      0deg,
-      rgba(247, 248, 244, 0.98) 0%,
-      rgba(247, 248, 244, 0.8) 58%,
-      rgba(247, 248, 244, 0.42) 100%
-    );
+    background: linear-gradient(0deg, rgba(247, 248, 244, 0.98) 0%, rgba(247, 248, 244, 0.8) 58%, rgba(247, 248, 244, 0.42) 100%);
   }
 
   .actions,

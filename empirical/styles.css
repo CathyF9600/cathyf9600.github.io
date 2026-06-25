@@ -224,6 +224,7 @@ h3 {
   border-radius: 0;
   background: #fff;
   box-shadow: none;
+  padding: clamp(12px, 2vw, 24px);
   overflow: hidden;
 }
 

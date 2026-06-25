@@ -3,13 +3,20 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="Demystifying Action Space Design for Robotic Manipulation Policies" />
-    <title>Demystifying Action Space Design for Robotic Manipulation Policies</title>
+    <meta
+      name="description"
+      content="Demystifying Action Space Design for Robotic Manipulation Policies"
+    />
+    <title>
+      Demystifying Action Space Design for Robotic Manipulation Policies
+    </title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="Back to top">Action Space Design</a>
+      <a class="brand" href="#top" aria-label="Back to top"
+        >Action Space Design</a
+      >
       <nav class="nav" aria-label="Primary navigation">
         <a href="#consensus">Motivation</a>
         <a href="#setup">Setup</a>
@@ -26,19 +33,33 @@
         </div>
         <div class="hero-content">
           <p class="venue">Robotic Manipulation Policy Learning</p>
-          <h1>Demystifying Action Space Design for Robotic Manipulation Policies</h1>
+          <h1>
+            Demystifying Action Space Design for Robotic Manipulation Policies
+          </h1>
           <p class="authors">
-            Yuchun Feng<sup>*1</sup>, Jinliang Zheng<sup>*1,2</sup>, Zhihao Wang<sup>1,3</sup>, Dongxiu Liu<sup>1</sup>, Jianxiong Li<sup>1</sup>,
-            <br />Jiangmiao Pang<sup>2</sup>, Tai Wang<sup>2</sup>, Xianyuan Zhan<sup>1</sup>
+            Yuchun Feng<sup>*1</sup>, Jinliang Zheng<sup>*1,2</sup>, Zhihao
+            Wang<sup>1,3</sup>, Dongxiu Liu<sup>1</sup>, Jianxiong
+            Li<sup>1</sup>,
+            <br />Jiangmiao Pang<sup>2</sup>, Tai Wang<sup>2</sup>, Xianyuan
+            Zhan<sup>1</sup>
           </p>
           <p class="affiliations">
-            <sup>*</sup>Equal contribution · <sup>1</sup>Institute for AI Industry Research, Tsinghua University · <sup>2</sup>Shanghai AI Lab ·
-            <sup>3</sup>Peking University
+            <sup>*</sup>Equal contribution · <sup>1</sup>Institute for AI
+            Industry Research, Tsinghua University · <sup>2</sup>Shanghai AI Lab
+            · <sup>3</sup>Peking University
           </p>
           <div class="actions" aria-label="Project links">
             <a class="button" href="https://arxiv.org/pdf/2602.23408">Paper</a>
-            <a class="button" href="https://github.com/CathyF9600/DemystifyActionSpace">Code</a>
-            <span class="button button-disabled" aria-disabled="true">HuggingFace</span>
+            <a
+              class="button"
+              href="https://github.com/CathyF9600/DemystifyActionSpace"
+              >Code</a
+            >
+            <a
+              class="button"
+              href="https://huggingface.co/datasets/cfeng9600/DemystifyActionSpace"
+              >HuggingFace</a
+            >
           </div>
         </div>
       </section>
@@ -49,21 +70,31 @@
           <h2>Action Space Design Has Not Reached Consensus</h2>
         </div>
         <figure class="figure figure-wide">
-          <img src="media/consensus.png" alt="Comparison showing that action space design has not reached consensus" />
+          <img
+            src="media/consensus.png"
+            alt="Comparison showing that action space design has not reached consensus"
+          />
         </figure>
         <div class="split">
           <div class="copy">
             <p>
-              Action space specification is a critical design choice in imitation-based robotic manipulation policy learning. The chosen action space
-              fundamentally shapes the optimization landscape and learning dynamics of robotic policies.
+              Action space specification is a critical design choice in
+              imitation-based robotic manipulation policy learning. The chosen
+              action space fundamentally shapes the optimization landscape and
+              learning dynamics of robotic policies.
             </p>
             <p>
-              Because action spaces are often selected using ad-hoc heuristics or legacy conventions, their role remains unclear. We conduct a
-              large-scale empirical study and decompose action design along two key dimensions.
+              Because action spaces are often selected using ad-hoc heuristics
+              or legacy conventions, their role remains unclear. We conduct a
+              large-scale empirical study and decompose action design along two
+              key dimensions.
             </p>
           </div>
           <figure class="figure figure-large">
-            <img src="media/preliminary.png" alt="Action design space decomposition" />
+            <img
+              src="media/preliminary.png"
+              alt="Action design space decomposition"
+            />
           </figure>
         </div>
       </section>
@@ -85,12 +116,19 @@
         </div>
         <div class="split split-reverse">
           <figure class="figure figure-xl">
-            <img src="media/delta_horizon.png" alt="Delta action and horizon ablation results" />
+            <img
+              src="media/delta_horizon.png"
+              alt="Delta action and horizon ablation results"
+            />
           </figure>
           <div class="callouts">
-            <p>Chunk-wise delta is fundamentally superior to step-wise delta.</p>
             <p>
-              Optimal horizons are critical and abstraction-dependent: delta requires shorter windows while absolute thrives with longer horizons.
+              Chunk-wise delta is fundamentally superior to step-wise delta.
+            </p>
+            <p>
+              Optimal horizons are critical and abstraction-dependent: delta
+              requires shorter windows while absolute thrives with longer
+              horizons.
             </p>
           </div>
         </div>
@@ -102,20 +140,38 @@
           <h2>Delta, Joint-Space, and Task-Space Strengths Depend on Regime</h2>
         </div>
         <figure class="figure figure-wide">
-          <img src="media/main_table.png" alt="Main comparison table of action representations" />
+          <img
+            src="media/main_table.png"
+            alt="Main comparison table of action representations"
+          />
         </figure>
         <div class="gallery-two">
           <figure class="figure figure-large">
-            <img src="media/radar.png" alt="Radar chart comparing action representation performance" />
+            <img
+              src="media/radar.png"
+              alt="Radar chart comparing action representation performance"
+            />
           </figure>
           <figure class="figure">
-            <img src="media/advanced.png" alt="Advanced experiment comparison" />
+            <img
+              src="media/advanced.png"
+              alt="Advanced experiment comparison"
+            />
           </figure>
         </div>
         <div class="takeaway-grid">
-          <p>The superiority of delta actions remains consistent across diverse learning regimes.</p>
-          <p>Joint-space actions benefit exceptionally from stronger modeling capacity and extensive training.</p>
-          <p>Task-space representations show a pronounced advantage in generalized settings such as cross embodiment and transfer learning.</p>
+          <p>
+            The superiority of delta actions remains consistent across diverse
+            learning regimes.
+          </p>
+          <p>
+            Joint-space actions benefit exceptionally from stronger modeling
+            capacity and extensive training.
+          </p>
+          <p>
+            Task-space representations show a pronounced advantage in
+            generalized settings such as cross embodiment and transfer learning.
+          </p>
         </div>
       </section>
 
@@ -126,8 +182,15 @@
         </div>
         <div class="split">
           <div class="callouts">
-            <p>Delta actions serve as a superior temporal abstraction for modern policy backbones.</p>
-            <p>Joint-space control generally provides a robust spatial representation, particularly when paired with strong generative modeling.</p>
+            <p>
+              Delta actions serve as a superior temporal abstraction for modern
+              policy backbones.
+            </p>
+            <p>
+              Joint-space control generally provides a robust spatial
+              representation, particularly when paired with strong generative
+              modeling.
+            </p>
           </div>
           <figure class="figure figure-large">
             <img src="media/scaling.png" alt="Scaling experiment results" />
@@ -150,12 +213,17 @@
           <h2>Performance Uniformity Across Workspace Locations</h2>
         </div>
         <figure class="figure figure-wide figure-slim">
-          <img src="media/spatial.png" alt="Spatial variation in performance across workspace bins" />
+          <img
+            src="media/spatial.png"
+            alt="Spatial variation in performance across workspace bins"
+          />
         </figure>
         <p class="body-copy">
-          We partition the workspace into a <code>6x6</code> grid and evaluate each policy across spatial bins. For each action representation, we
-          compute success rate within each cell and summarize spatial heterogeneity by the standard deviation of per-cell success rates. Lower values
-          indicate more uniform performance across the workspace.
+          We partition the workspace into a <code>6x6</code> grid and evaluate
+          each policy across spatial bins. For each action representation, we
+          compute success rate within each cell and summarize spatial
+          heterogeneity by the standard deviation of per-cell success rates.
+          Lower values indicate more uniform performance across the workspace.
         </p>
       </section>
 
@@ -166,7 +234,10 @@
         </div>
         <div class="gallery-two">
           <figure class="figure figure-large">
-            <img src="media/robotwin_ep.png" alt="RoboTwin scaling by episodes" />
+            <img
+              src="media/robotwin_ep.png"
+              alt="RoboTwin scaling by episodes"
+            />
           </figure>
           <figure class="figure figure-large">
             <img src="media/robotwin_data.png" alt="RoboTwin scaling by data" />
@@ -176,35 +247,83 @@
           <h3>Sample Rollout Videos</h3>
           <div class="video-grid">
             <figure class="video-card">
-              <video src="media/robotwin/dump_bin_bigbin/abs_ee.mp4" controls muted playsinline preload="metadata"></video>
+              <video
+                src="media/robotwin/dump_bin_bigbin/abs_ee.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
               <figcaption>Dump Bin BigBin · Abs-EE</figcaption>
             </figure>
             <figure class="video-card">
-              <video src="media/robotwin/dump_bin_bigbin/abs_qpos.mp4" controls muted playsinline preload="metadata"></video>
+              <video
+                src="media/robotwin/dump_bin_bigbin/abs_qpos.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
               <figcaption>Dump Bin BigBin · Abs-Joint</figcaption>
             </figure>
             <figure class="video-card">
-              <video src="media/robotwin/dump_bin_bigbin/rel_ee.mp4" controls muted playsinline preload="metadata"></video>
+              <video
+                src="media/robotwin/dump_bin_bigbin/rel_ee.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
               <figcaption>Dump Bin BigBin · Delta-EE</figcaption>
             </figure>
             <figure class="video-card">
-              <video src="media/robotwin/dump_bin_bigbin/rel_qpos.mp4" controls muted playsinline preload="metadata"></video>
+              <video
+                src="media/robotwin/dump_bin_bigbin/rel_qpos.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
               <figcaption>Dump Bin BigBin · Delta-Joint</figcaption>
             </figure>
             <figure class="video-card">
-              <video src="media/robotwin/place_burger_fries/abs_ee.mp4" controls muted playsinline preload="metadata"></video>
+              <video
+                src="media/robotwin/place_burger_fries/abs_ee.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
               <figcaption>Place Burger Fries · Abs-EE</figcaption>
             </figure>
             <figure class="video-card">
-              <video src="media/robotwin/place_burger_fries/abs_qpos.mp4" controls muted playsinline preload="metadata"></video>
+              <video
+                src="media/robotwin/place_burger_fries/abs_qpos.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
               <figcaption>Place Burger Fries · Abs-Joint</figcaption>
             </figure>
             <figure class="video-card">
-              <video src="media/robotwin/place_burger_fries/rel_ee.mp4" controls muted playsinline preload="metadata"></video>
+              <video
+                src="media/robotwin/place_burger_fries/rel_ee.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
               <figcaption>Place Burger Fries · Delta-EE</figcaption>
             </figure>
             <figure class="video-card">
-              <video src="media/robotwin/place_burger_fries/rel_qpos.mp4" controls muted playsinline preload="metadata"></video>
+              <video
+                src="media/robotwin/place_burger_fries/rel_qpos.mp4"
+                controls
+                muted
+                playsinline
+                preload="metadata"
+              ></video>
               <figcaption>Place Burger Fries · Delta-Joint</figcaption>
             </figure>
           </div>
@@ -217,20 +336,32 @@
           <h2>Advanced VLA Experiments for Deformable Object Manipulation</h2>
         </div>
         <p class="body-copy">
-          We introduce advanced experiments on cloth folding as a representative deformable object manipulation task. The VLA model uses a VLM+DiT
-          backbone and two evaluation protocols designed to stress-test adaptability.
+          We introduce advanced experiments on cloth folding as a representative
+          deformable object manipulation task. The VLA model uses a VLM+DiT
+          backbone and two evaluation protocols designed to stress-test
+          adaptability.
         </p>
         <figure class="figure figure-wide figure-slim">
-          <img src="media/xvla_result.png" alt="Cloth folding VLA result summary" />
+          <img
+            src="media/xvla_result.png"
+            alt="Cloth folding VLA result summary"
+          />
         </figure>
-        <div class="youtube-grid" id="youtube-grid" aria-label="Cloth folding video embeds"></div>
+        <div
+          class="youtube-grid"
+          id="youtube-grid"
+          aria-label="Cloth folding video embeds"
+        ></div>
       </section>
     </main>
 
     <footer class="footer">
       <p>
-        Correspondence: <a href="mailto:taiwang.me@gmail.com">taiwang.me@gmail.com</a>,
-        <a href="mailto:zhanxianyuan@air.tsinghua.edu.cn">zhanxianyuan@air.tsinghua.edu.cn</a>
+        Correspondence:
+        <a href="mailto:taiwang.me@gmail.com">taiwang.me@gmail.com</a>,
+        <a href="mailto:zhanxianyuan@air.tsinghua.edu.cn"
+          >zhanxianyuan@air.tsinghua.edu.cn</a
+        >
       </p>
     </footer>
 

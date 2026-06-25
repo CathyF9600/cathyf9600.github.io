@@ -14,8 +14,4 @@ This folder is intended for the repository:
 CathyF9600/CathyF9600.github.io
 ```
 
-Pushing the `main` branch to that repository publishes the project page at:
-
-```text
-https://CathyF9600.github.io/empirical/
-```
+Pushing the `main` branch publishes this project page under `/empirical/`.

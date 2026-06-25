@@ -192,6 +192,10 @@ h3 {
   background: var(--accent);
 }
 
+.button-disabled {
+  cursor: default;
+}
+
 .section {
   padding: clamp(58px, 8vw, 108px) clamp(18px, 5vw, 72px);
 }
